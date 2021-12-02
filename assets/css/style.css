@@ -56,3 +56,50 @@ header nav ul li a {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+/* Hero will continue befor this line*/
+/* Footer */ 
+footer {
+    padding: 40px 35px;
+    background: #0f3663;
+    width: 100%;
+    display: flex;
+    justify-content:flex-start ;
+    flex-wrap: wrap;
+}
+
+footer div {
+    text-align: right;
+    line-height: 1.5;
+}
+
+footer ul li a {
+    font-weight: bold;
+    font-size: 15px;
+    color: #e4e7eb;
+    
+}
+
+footer ul {
+    color: #e4e7eb;
+    text-align: left;
+    display: inline-block;
+    width: 30px;
+}
+
+/*footer continues above this line. */
+.duo-right{
+    float: right;
+}
+
+.duo-left{
+    float: left;
+}
+
+.duos {
+    border: solid #d64b4b 3px;
+    margin: 20px 0 auto;
+
+    
+}
+
