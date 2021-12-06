@@ -7,14 +7,32 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #0f3663;
+    background-color: cadetblue;
 }
 
 .section-title {
     color: #e4e7eb;
     font-size: 25px;
-    border-bottom: solid #d64b4b 2px;
     font-style: italic;
 }
+/* my projects section */ 
+.secondary-title {
+    border-bottom: solid white 3px;
+    padding-bottom: 15px;
+    margin: 0 auto 25px auto;
+    width: 9%;
+}
+
+.run-buddy {
+    border: solid white 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 2px;
+    margin: 33px;
+}
+
+
 /* header section START */
 header {
     display: flex;
@@ -66,6 +84,12 @@ header nav ul li a {
     padding: 100px 51px;
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+.face-img {
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
 }
 
 .hero-text {
@@ -120,12 +144,14 @@ footer ul {
 /*footer continues above this line. */
 
 .duo-right {
-    border:#d64b4b solid 3px;
+    border:white solid 3px;
   
 }
 
 .duo-left {
-    border: solid #d64b4b 3px;
+    border: solid white 3px;
+    font-style: none;
+    padding: 0 0 0 26px;
 }
 
 .duo {
@@ -134,11 +160,100 @@ footer ul {
     justify-content: space-between;
 }
 
+.in-between {
+    border: 3px solid white;
+
+}
+
+
 #my-background {
     display: flex;
     margin: 25px 15px;
     padding: 15px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
+}
+
+/* media Queries */ 
+
+@media screen and (max-width: 1300px){
+    .hero {
+        margin: 15px auto;
+    padding: 100px 51px 25px;
+    }
+    
+    .hero-text {
+    width: 29%;
+    text-align: center;
+    margin: 3%;
+    font-size: 16px;
+    line-height: 1.3;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: white 3px solid;
+    background: lightblue;
+    }
+
+    .in-between, .duo-left {
+        padding: 8px 20px;
+        margin: 0px 0 14px 0px;
+
+
+}
+
+@media  screen and (max-width: 1200px) {
+    .duo-left {
+        padding: 7px 40px 13px 26px;
+    margin: 10px;
+    }
+
+    .duo-right {
+        padding: 0px 100px 10px 100px;
+    margin: 9px 0px -23px 0px;
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+}
+
+header  h1 { 
+    width: 100%;
+    text-align: center;
+}
+
+header nav ul{
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+header nav ul li a {
+    font-size: 20px;
+}
+
+footer h2, footer div {
+    text-align: center;
+    width: 100%;
+}
+
+.hero {
+    margin: 23px auto;
+    padding: 50px 51px;
+
+}
+
+.hero-text {
+    width: 27%; 
+    margin: 0;
+    font-size: 12px;
+}
+
+
+}
 }
