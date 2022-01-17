@@ -23,7 +23,7 @@ body {
     width: 9%;
 }
 
-.run-buddy {
+.my-repos {
     border: solid white 3px;
     display: flex;
     flex-wrap: wrap;
@@ -94,13 +94,15 @@ header nav ul li a {
 
 .hero-text {
     width: 29%;
-    text-align: left;
+    text-align: center;
     margin: 3%;
     font-size: 20px;
     line-height: 1.3;
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
+    border: white 3px solid;
+    background-color: lightblue;
 }
 
 /* Hero will continue befor this line*/
